@@ -1,0 +1,53 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Install Dependencies",
+      "command": "yarn install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "lint": {
+      "name": "lint",
+      "command": "yarn lint",
+      "runAtStart": false
+    },
+    "lint:fix": {
+      "name": "lint:fix",
+      "command": "yarn lint:fix",
+      "runAtStart": false
+    },
+    "simulate:mainnet": {
+      "name": "simulate:mainnet",
+      "command": "yarn simulate:mainnet",
+      "runAtStart": false
+    },
+    "simulate:optimism": {
+      "name": "simulate:optimism",
+      "command": "yarn simulate:optimism",
+      "runAtStart": false
+    },
+    "simulate:polygon": {
+      "name": "simulate:polygon",
+      "command": "yarn simulate:polygon",
+      "runAtStart": true
+    },
+    "simulate:arbitrum": {
+      "name": "simulate:arbitrum",
+      "command": "yarn simulate:arbitrum",
+      "runAtStart": false
+    },
+    "simulate:avalanche": {
+      "name": "simulate:avalanche",
+      "command": "yarn simulate:avalanche",
+      "runAtStart": false
+    },
+    "simulate:fantom": {
+      "name": "simulate:fantom",
+      "command": "yarn simulate:fantom",
+      "runAtStart": false
+    }
+  }
+}
